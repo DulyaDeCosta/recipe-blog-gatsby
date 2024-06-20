@@ -12,9 +12,18 @@ module.exports = {
     title: `Gatsby Default Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `http://localhost:8000`,
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-ghost`,
+      options: {
+        apiUrl: `http://localhost:2369`, // Your Ghost admin URL
+        contentApiKey: `e6bc50490b2a30411c5734fa30`, // Your Ghost Content API key
+      },
+    },
+
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
