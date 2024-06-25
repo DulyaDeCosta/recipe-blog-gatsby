@@ -13,6 +13,7 @@
     "gatsby-source-filesystem": "^5.13.1",
     "gatsby-source-ghost": "^5.0.2",
     "gatsby-transformer-sharp": "^5.13.1",
+    "ghost-storage-adapter-s3": "^2.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0"
